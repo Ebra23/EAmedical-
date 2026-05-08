@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Affordable dental treatments and healthcare in Turkey & Europe. JCI-accredited hospitals, verified patient testimonials, 24/7 support. Save up to 70% on dental work abroad.">
+<meta name="keywords" content="medical tourism Turkey, affordable dental treatment abroad, dental implants Turkey, medical tourism Europe, affordable surgery Turkey, dental veneers abroad, medical tourism agency">
+<meta property="og:title" content="EAmedical — Premium Medical Tourism | Turkey & Europe">
+<meta property="og:description" content="Save up to 70% on world-class dental treatments in Turkey & Europe. JCI-accredited hospitals. 24/7 support.">
+<title>EAmedical — World-Class Dental Care in Turkey & Europe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1a1408;
+    --navy-mid: #2a200c;
+    --navy-light: #3d3015;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --gold-pale: #faf5e8;
+    --gold-deep: #a07830;
+    --teal: #a07830;
+    --teal-light: #f5ead4;
+    --cream: #fdfaf2;
+    --white: #ffffff;
+    --text-dark: #1a1408;
+    --text-mid: #4a3c18;
+    --text-muted: #8a7a54;
+    --border: rgba(160,120,48,0.15);
+    --shadow: 0 4px 32px rgba(26,20,8,0.08);
+    --shadow-lg: 0 16px 64px rgba(26,20,8,0.14);
+    --radius: 12px;
+    --radius-lg: 20px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    box-shadow: 0 2px 20px rgba(160,120,48,0.08);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none;
+  }
+  .nav-logo-svg { height: 36px; width: auto; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    color: rgba(26,20,8,0.65); text-decoration: none;
+    font-size: 0.875rem; font-weight: 400; letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold-deep); }
+  .nav-cta {
+    background: var(--gold); color: var(--white);
+    padding: 0.5rem 1.4rem; border-radius: 50px;
+    font-size: 0.875rem; font-weight: 600;
+    text-decoration: none; transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--gold-deep); transform: translateY(-1px); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 22px; height: 2px; background: var(--text-dark); border-radius: 2px; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: linear-gradient(150deg, #0f0c04 0%, #1e1608 50%, #0f0c04 100%);
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 100px 5% 60px;
+  }
+  .hero-pattern {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 20% 50%, rgba(201,168,76,0.10) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(201,168,76,0.06) 0%, transparent 40%),
+      radial-gradient(circle at 60% 80%, rgba(232,213,163,0.05) 0%, transparent 35%);
+  }
+  .hero-grid-lines {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 620px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3);
+    color: var(--gold-light); padding: 6px 16px; border-radius: 50px;
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.05em;
+    text-transform: uppercase; margin-bottom: 1.5rem;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-badge::before { content: '✦'; font-size: 0.6rem; }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-weight: 300; color: var(--white);
+    line-height: 1.15; margin-bottom: 1.5rem;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  .hero-title em { color: var(--gold); font-style: italic; font-weight: 400; }
+  .hero-sub {
+    font-size: 1.05rem; color: rgba(255,255,255,0.65);
+    margin-bottom: 2.5rem; max-width: 500px; font-weight: 300;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-actions {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+  .btn-primary {
+    background: var(--gold); color: var(--white);
+    padding: 0.875rem 2rem; border-radius: 50px;
+    font-size: 0.95rem; font-weight: 600;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: var(--gold-deep); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.35); }
+  .btn-outline {
+    background: transparent; color: var(--white);
+    padding: 0.875rem 2rem; border-radius: 50px;
+    font-size: 0.95rem; font-weight: 500;
+    text-decoration: none; border: 1px solid rgba(255,255,255,0.3); cursor: pointer;
+    transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.07); }
+  .hero-stats {
+    position: absolute; bottom: 0; left: 0; right: 0; z-index: 1;
+    display: flex; justify-content: center; gap: 0;
+    background: rgba(255,255,255,0.04);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    animation: fadeUp 0.6s 0.5s ease both;
+  }
+  .stat-item {
+    flex: 1; max-width: 200px; padding: 1.5rem 2rem;
+    text-align: center; border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 600; color: var(--gold);
+    line-height: 1; display: block;
+  }
+  .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); letter-spacing: 0.04em; margin-top: 4px; display: block; }
+
+  /* ── SECTION BASE ── */
+  section { padding: 90px 5%; }
+  .section-tag {
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold-deep);
+    margin-bottom: 0.75rem; display: block;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 400; color: var(--text-dark);
+    line-height: 1.2; margin-bottom: 1rem;
+  }
+  .section-title em { color: var(--gold-deep); font-style: italic; }
+  .section-sub { font-size: 1rem; color: var(--text-muted); max-width: 540px; font-weight: 300; }
+  .section-header { margin-bottom: 3.5rem; }
+  .section-header.centered { text-align: center; }
+  .section-header.centered .section-sub { margin: 0 auto; }
+
+  /* ── TRUST BAR ── */
+  #trust { background: var(--white); padding: 40px 5%; border-bottom: 1px solid var(--border); }
+  .trust-inner { display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+  .trust-label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+  .trust-badges { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+  .badge-item {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--cream); border: 1px solid var(--border);
+    padding: 8px 16px; border-radius: 50px;
+    font-size: 0.8rem; font-weight: 600; color: var(--text-dark);
+  }
+  .badge-icon { width: 20px; height: 20px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .badge-icon svg { width: 12px; height: 12px; fill: white; }
+
+  /* ── TREATMENTS ── */
+  #treatments { background: var(--cream); }
+  .treatments-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+  .treatment-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+    transition: all 0.3s; cursor: pointer; text-decoration: none; color: inherit;
+    display: block;
+  }
+  .treatment-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(26,122,110,0.2); }
+  .treatment-img {
+    height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3.5rem; position: relative; overflow: hidden;
+  }
+  .treatment-img.dental { background: linear-gradient(135deg, #faf5e8 0%, #f0dfa8 100%); }
+  .treatment-img.implants { background: linear-gradient(135deg, #fdf8ee 0%, #e8d5a3 100%); }
+  .treatment-img.veneers { background: linear-gradient(135deg, #fdf5e0 0%, #f5dc98 100%); }
+  .treatment-img.ortho { background: linear-gradient(135deg, #faf0d8 0%, #e8c878 100%); }
+  .treatment-img.whitening { background: linear-gradient(135deg, #fefaf0 0%, #f8e8b0 100%); }
+  .treatment-img.full-mouth { background: linear-gradient(135deg, #fdf0d0 0%, #e8c860 100%); }
+  .treatment-body { padding: 1.5rem; }
+  .treatment-name { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .treatment-desc { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem; font-weight: 300; }
+  .treatment-savings {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--gold-pale); border: 1px solid rgba(160,120,48,0.2);
+    color: var(--gold-deep);
+    padding: 4px 12px; border-radius: 50px;
+    font-size: 0.78rem; font-weight: 600;
+  }
+  .treatment-price { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; }
+  .treatment-price strong { color: var(--gold-deep); font-weight: 600; }
+
+  /* ── JOURNEY ── */
+  #journey { background: #0f0c04; position: relative; overflow: hidden; }
+  #journey .section-tag { color: var(--gold); }
+  #journey .section-title { color: var(--white); }
+  #journey .section-sub { color: rgba(255,255,255,0.55); }
+  .journey-pattern {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(201,168,76,0.07) 0%, transparent 60%);
+  }
+  .journey-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2px; position: relative; z-index: 1; }
+  .journey-step {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);
+    padding: 2.5rem 2rem; position: relative;
+    transition: background 0.3s;
+  }
+  .journey-step:hover { background: rgba(255,255,255,0.06); }
+  .journey-step:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+  .journey-step:last-child { border-radius: 0 var(--radius) var(--radius) 0; }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; font-weight: 300; color: rgba(201,168,76,0.25);
+    line-height: 1; margin-bottom: 1rem;
+  }
+  .step-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+  .step-title { font-size: 1.05rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; }
+  .step-desc { font-size: 0.85rem; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.6; }
+  .step-connector {
+    position: absolute; right: -1px; top: 50%; transform: translateY(-50%);
+    width: 0; height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid rgba(201,168,76,0.4);
+    z-index: 2;
+  }
+  .journey-step:last-child .step-connector { display: none; }
+
+  /* ── COST CALCULATOR ── */
+  #calculator { background: var(--white); }
+  .calc-wrapper {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+  }
+  .calc-form { }
+  .calc-label { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem; display: block; }
+  .calc-select, .calc-input {
+    width: 100%; padding: 0.875rem 1rem;
+    border: 1.5px solid var(--border); border-radius: var(--radius);
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--text-dark);
+    background: var(--cream); outline: none; transition: border-color 0.2s;
+    appearance: none; margin-bottom: 1.25rem;
+  }
+  .calc-select:focus, .calc-input:focus { border-color: var(--gold); background: white; }
+  .calc-results {
+    background: #0f0c04; border-radius: var(--radius-lg);
+    padding: 2.5rem; color: white;
+  }
+  .calc-results-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; font-weight: 400; margin-bottom: 2rem;
+    color: rgba(255,255,255,0.85);
+  }
+  .savings-bar { margin-bottom: 1.5rem; }
+  .savings-bar-label { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.82rem; }
+  .savings-bar-label .country { color: rgba(255,255,255,0.6); }
+  .savings-bar-label .price { font-weight: 600; }
+  .bar-track { height: 10px; background: rgba(255,255,255,0.1); border-radius: 5px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 5px; transition: width 0.6s ease; }
+  .bar-fill.home { background: rgba(255,255,255,0.25); }
+  .bar-fill.turkey { background: var(--gold); }
+  .savings-total {
+    border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; margin-top: 1.5rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .savings-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 600; color: var(--gold);
+  }
+  .savings-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 4px; }
+  .savings-pct {
+    background: rgba(201,168,76,0.2); border: 1px solid rgba(201,168,76,0.3);
+    color: var(--gold); padding: 6px 16px; border-radius: 50px;
+    font-size: 1.1rem; font-weight: 600;
+  }
+
+  /* ── HOSPITALS ── */
+  #hospitals { background: var(--cream); }
+  .hospitals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+  .hospital-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 2rem;
+    transition: all 0.3s;
+  }
+  .hospital-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .hospital-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+  .hospital-icon {
+    width: 52px; height: 52px; border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--gold-pale), #f0dfa8);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem;
+  }
+  .jci-badge {
+    background: var(--gold-pale); border: 1px solid rgba(201,168,76,0.4);
+    color: #8a6900; padding: 4px 10px; border-radius: 50px;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
+  }
+  .hospital-name { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .hospital-location { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; }
+  .hospital-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
+  .hosp-tag {
+    background: var(--cream); border: 1px solid var(--border);
+    color: var(--text-mid); padding: 3px 10px; border-radius: 50px;
+    font-size: 0.75rem; font-weight: 500;
+  }
+  .hospital-rating { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; }
+  .stars { color: var(--gold); letter-spacing: 1px; }
+  .rating-num { font-weight: 600; }
+  .rating-count { color: var(--text-muted); }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--white); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+  .testimonial-card {
+    background: var(--cream); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 2rem; position: relative;
+    transition: all 0.3s;
+  }
+  .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); background: white; }
+  .quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; color: var(--teal-light);
+    line-height: 0.5; margin-bottom: 1rem; display: block;
+    font-style: italic;
+  }
+  .testimonial-text { font-size: 0.92rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1.5rem; font-weight: 300; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 12px; }
+  .author-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: linear-gradient(135deg, #c9a84c, #a07830);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.85rem; color: white;
+    flex-shrink: 0;
+  }
+  .author-name { font-weight: 600; font-size: 0.9rem; }
+  .author-detail { font-size: 0.78rem; color: var(--text-muted); }
+  .treatment-tag {
+    position: absolute; top: 1.25rem; right: 1.25rem;
+    background: var(--gold-pale); border: 1px solid rgba(160,120,48,0.2);
+    color: var(--gold-deep);
+    padding: 3px 10px; border-radius: 50px;
+    font-size: 0.72rem; font-weight: 600;
+  }
+  .verified-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--gold-deep); font-weight: 600; margin-top: 4px; }
+
+  /* ── DOCTORS ── */
+  #doctors { background: var(--cream); }
+  .doctors-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
+  .doctor-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+    transition: all 0.3s; text-align: center;
+  }
+  .doctor-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .doctor-avatar-wrap {
+    height: 160px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 4rem; position: relative;
+  }
+  .doctor-avatar-wrap.d1 { background: linear-gradient(135deg, #faf5e8, #f0dfa8); }
+  .doctor-avatar-wrap.d2 { background: linear-gradient(135deg, #fdf8ee, #e8d5a3); }
+  .doctor-avatar-wrap.d3 { background: linear-gradient(135deg, #faf0d8, #e8c878); }
+  .doctor-avatar-wrap.d4 { background: linear-gradient(135deg, #fdf5e0, #f0dc98); }
+  .doctor-body { padding: 1.5rem; }
+  .doctor-name { font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem; }
+  .doctor-specialty { font-size: 0.82rem; color: var(--gold-deep); font-weight: 600; margin-bottom: 0.5rem; }
+  .doctor-creds { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+  .doctor-exp { font-size: 0.82rem; font-weight: 600; color: var(--text-mid); }
+
+  /* ── CONSULTATION FORM ── */
+  #consultation {
+    background: linear-gradient(135deg, #0f0c04 0%, #1e1608 100%);
+    position: relative; overflow: hidden;
+  }
+  #consultation .section-tag { color: var(--gold); }
+  #consultation .section-title { color: var(--white); }
+  #consultation .section-sub { color: rgba(255,255,255,0.55); }
+  .consult-pattern {
+    position: absolute; right: 0; top: 0; bottom: 0; width: 45%;
+    background: radial-gradient(ellipse at 80% 50%, rgba(201,168,76,0.08) 0%, transparent 60%);
+  }
+  .consult-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; position: relative; z-index: 1; }
+  .consult-features { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+  .consult-feature { display: flex; gap: 1rem; align-items: flex-start; }
+  .feature-icon {
+    width: 44px; height: 44px; border-radius: var(--radius);
+    background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; flex-shrink: 0;
+  }
+  .feature-title { font-size: 0.95rem; font-weight: 600; color: var(--white); margin-bottom: 0.25rem; }
+  .feature-desc { font-size: 0.82rem; color: rgba(255,255,255,0.5); font-weight: 300; }
+  .form-card {
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 2.5rem; box-shadow: var(--shadow-lg);
+  }
+  .form-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .form-subtitle { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem; }
+  .form-group { margin-bottom: 1rem; }
+  .form-label { font-size: 0.82rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.4rem; display: block; }
+  .form-input, .form-select, .form-textarea {
+    width: 100%; padding: 0.75rem 1rem;
+    border: 1.5px solid var(--border); border-radius: var(--radius);
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--text-dark);
+    background: var(--cream); outline: none; transition: border-color 0.2s;
+  }
+  .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--gold); background: white; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-submit {
+    width: 100%; padding: 0.95rem; border-radius: 50px;
+    background: var(--gold); color: white; border: none;
+    font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 600;
+    cursor: pointer; transition: all 0.2s; margin-top: 0.5rem;
+  }
+  .form-submit:hover { background: var(--gold-deep); transform: translateY(-1px); }
+  .form-privacy { font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem; }
+
+  /* ── SUPPORT STRIP ── */
+  #support { background: var(--gold-pale); border-top: 1px solid rgba(201,168,76,0.25); border-bottom: 1px solid rgba(201,168,76,0.25); padding: 50px 5%; }
+  .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+  .support-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .support-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 4px; }
+  .support-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.3rem; }
+  .support-desc { font-size: 0.82rem; color: var(--text-muted); font-weight: 300; }
+
+  /* ── FOOTER ── */
+  footer { background: #0a0802; color: rgba(255,255,255,0.65); padding: 60px 5% 30px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .footer-brand { }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 600; color: white; margin-bottom: 1rem; display: block;
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer-desc { font-size: 0.85rem; line-height: 1.7; max-width: 280px; }
+  .footer-col-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.9); margin-bottom: 1rem; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-links a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; font-size: 0.78rem; }
+  .footer-certs { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .cert-pill {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.7); padding: 4px 12px; border-radius: 50px;
+    font-size: 0.72rem; font-weight: 600;
+  }
+
+  /* ── FLOATING CTA ── */
+  .float-cta {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 900;
+    background: var(--gold); color: white;
+    padding: 0.875rem 1.5rem; border-radius: 50px;
+    text-decoration: none; font-weight: 600; font-size: 0.9rem;
+    box-shadow: 0 8px 32px rgba(201,168,76,0.45);
+    transition: all 0.25s; display: flex; align-items: center; gap: 8px;
+    animation: slideUp 0.5s 1s ease both;
+  }
+  .float-cta:hover { background: var(--gold-deep); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(201,168,76,0.5); }
+  .float-cta .pulse {
+    width: 8px; height: 8px; background: #fff9e6; border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+
+  /* ── MOBILE NAV OVERLAY ── */
+  .mobile-nav {
+    position: fixed; inset: 0; background: #0f0c04; z-index: 999;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem;
+    transform: translateX(100%); transition: transform 0.3s ease;
+  }
+  .mobile-nav.open { transform: translateX(0); }
+  .mobile-nav a { font-size: 1.4rem; color: white; text-decoration: none; font-family: 'Cormorant Garamond', serif; }
+  .mobile-nav a:hover { color: var(--gold); }
+  .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 2rem; color: white; cursor: pointer; background: none; border: none; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.5); }
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .calc-wrapper, .consult-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .journey-step:first-child, .journey-step:last-child { border-radius: 0; }
+    .hero-stats .stat-item:nth-child(n+4) { display: none; }
+  }
+  @media (max-width: 680px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-stats { display: none; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    section { padding: 60px 5%; }
+    .step-connector { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    <svg class="nav-logo-svg" viewBox="0 0 180 40" xmlns="http://www.w3.org/2000/svg" aria-label="EAmedical">
+      <!-- Gold cross / medical mark -->
+      <rect x="2" y="14" width="6" height="12" rx="2" fill="#c9a84c"/>
+      <rect x="0" y="18" width="10" height="4" rx="1.5" fill="#c9a84c"/>
+      <!-- EA lettering -->
+      <text x="18" y="28" font-family="'Cormorant Garamond', Georgia, serif" font-size="22" font-weight="600" fill="#1a1408" letter-spacing="0.5">EA</text>
+      <!-- medical in lighter weight -->
+      <text x="48" y="28" font-family="'DM Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#a07830" letter-spacing="1.5">medical</text>
+      <!-- thin gold underline -->
+      <line x1="18" y1="32" x2="162" y2="32" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#treatments">Treatments</a></li>
+    <li><a href="#journey">Patient Journey</a></li>
+    <li><a href="#hospitals">Hospitals</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#consultation">Contact</a></li>
+  </ul>
+  <a href="#consultation" class="nav-cta">Free Consultation</a>
+  <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.add('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+  <button class="mobile-close" onclick="document.querySelector('.mobile-nav').classList.remove('open')">✕</button>
+  <a href="#treatments" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Treatments</a>
+  <a href="#journey" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Patient Journey</a>
+  <a href="#hospitals" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Hospitals</a>
+  <a href="#testimonials" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Reviews</a>
+  <a href="#doctors" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Doctors</a>
+  <a href="#consultation" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Free Consultation</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Trusted by 12,000+ patients worldwide</div>
+    <h1 class="hero-title">
+      World-Class Dental Care in<br><em>Turkey & Europe</em><br>at a Fraction of the Cost
+    </h1>
+    <p class="hero-sub">
+      Access JCI-accredited hospitals, verified specialists, and full care coordination — saving up to 70% compared to UK, US, and German prices.
+    </p>
+    <div class="hero-actions">
+      <a href="#consultation" class="btn-primary">Book a Free Consultation →</a>
+      <a href="#calculator" class="btn-outline">Calculate Your Savings</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item"><span class="stat-num">70%</span><span class="stat-label">Avg. savings vs. UK prices</span></div>
+    <div class="stat-item"><span class="stat-num">12K+</span><span class="stat-label">Patients facilitated</span></div>
+    <div class="stat-item"><span class="stat-num">48</span><span class="stat-label">Partner hospitals</span></div>
+    <div class="stat-item"><span class="stat-num">4.9★</span><span class="stat-label">Average patient rating</span></div>
+    <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">Support available</span></div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust">
+  <div class="trust-inner">
+    <span class="trust-label">Accreditations & Partners</span>
+    <div class="trust-badges">
+      <div class="badge-item">
+        <div class="badge-icon"><svg viewBox="0 0 12 12"><path d="M6 1l1.2 3.7H11L8 6.9l1.2 3.7L6 8.4l-3.2 2.2L4 6.9 1 4.7h3.8z"/></svg></div>
+        JCI Accredited
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg viewBox="0 0 12 12"><path d="M6 1C3.2 1 1 3.2 1 6s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm2.3 4L5.5 8.8 3.7 7l.7-.7 1.1 1.1 2.1-3z"/></svg></div>
+        ISO 9001:2015
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg viewBox="0 0 12 12"><path d="M6 1l1.2 3.7H11L8 6.9l1.2 3.7L6 8.4l-3.2 2.2L4 6.9 1 4.7h3.8z"/></svg></div>
+        TURSAB Licensed
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg viewBox="0 0 12 12"><path d="M6 1C3.2 1 1 3.2 1 6s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm2.3 4L5.5 8.8 3.7 7l.7-.7 1.1 1.1 2.1-3z"/></svg></div>
+        GDPR Compliant
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg viewBox="0 0 12 12"><path d="M6 1l1.2 3.7H11L8 6.9l1.2 3.7L6 8.4l-3.2 2.2L4 6.9 1 4.7h3.8z"/></svg></div>
+        ADA Partner Clinics
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TREATMENTS -->
+<section id="treatments">
+  <div class="section-header">
+    <span class="section-tag">Our Specialisations</span>
+    <h2 class="section-title">Dental Treatments We <em>Facilitate</em></h2>
+    <p class="section-sub">From single implants to full-mouth rehabilitation — all procedures are performed at JCI-accredited partner clinics with English-speaking staff.</p>
+  </div>
+  <div class="treatments-grid">
+    <div class="treatment-card">
+      <div class="treatment-img dental">🦷</div>
+      <div class="treatment-body">
+        <div class="treatment-name">Dental Implants</div>
+        <div class="treatment-desc">Permanent titanium replacements for missing teeth. Includes abutment and crown placement.</div>
+        <div class="treatment-savings">Save up to 72%</div>
+        <div class="treatment-price">From <strong>£450</strong> per implant vs. avg. £2,200 in the UK</div>
+      </div>
+    </div>
+    <div class="treatment-card">
+      <div class="treatment-img veneers">✨</div>
+      <div class="treatment-body">
+        <div class="treatment-name">Porcelain Veneers</div>
+        <div class="treatment-desc">Ultra-thin shells bonded to the front of teeth for a perfect Hollywood smile.</div>
+        <div class="treatment-savings">Save up to 68%</div>
+        <div class="treatment-price">From <strong>£180</strong> per veneer vs. avg. £600–900 in UK</div>
+      </div>
+    </div>
+    <div class="treatment-card">
+      <div class="treatment-img implants">🔬</div>
+      <div class="treatment-body">
+        <div class="treatment-name">All-on-4 / All-on-6</div>
+        <div class="treatment-desc">Full-arch implant solutions anchored by 4 or 6 implants. A complete smile in one trip.</div>
+        <div class="treatment-savings">Save up to 65%</div>
+        <div class="treatment-price">From <strong>£3,500</strong> per arch vs. avg. £14,000 in UK</div>
+      </div>
+    </div>
+    <div class="treatment-card">
+      <div class="treatment-img ortho">🔄</div>
+      <div class="treatment-body">
+        <div class="treatment-name">Dental Crowns</div>
+        <div class="treatment-desc">Zirconia and e.max crowns to restore damaged or decayed teeth with natural aesthetics.</div>
+        <div class="treatment-savings">Save up to 70%</div>
+        <div class="treatment-price">From <strong>£120</strong> per crown vs. avg. £600–900 in UK</div>
+      </div>
+    </div>
+    <div class="treatment-card">
+      <div class="treatment-img whitening">🌟</div>
+      <div class="treatment-body">
+        <div class="treatment-name">Teeth Whitening</div>
+        <div class="treatment-desc">Professional laser & Zoom whitening for immediate, dramatic results in a single session.</div>
+        <div class="treatment-savings">Save up to 55%</div>
+        <div class="treatment-price">From <strong>£90</strong> vs. avg. £400–500 in UK</div>
+      </div>
+    </div>
+    <div class="treatment-card">
+      <div class="treatment-img full-mouth">🏆</div>
+      <div class="treatment-body">
+        <div class="treatment-name">Full-Mouth Rehabilitation</div>
+        <div class="treatment-desc">Comprehensive restorative plan combining implants, crowns, veneers, and gum treatment.</div>
+        <div class="treatment-savings">Save up to 74%</div>
+        <div class="treatment-price">Custom quote — typically <strong>£4,000–£9,000</strong> vs. £25,000+ in UK</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATIENT JOURNEY -->
+<section id="journey">
+  <div class="journey-pattern"></div>
+  <div class="section-header" style="position:relative;z-index:1;">
+    <span class="section-tag">How It Works</span>
+    <h2 class="section-title">Your Journey from <em>Inquiry to Smile</em></h2>
+    <p class="section-sub">A seamless, fully managed experience from first contact through post-treatment follow-up.</p>
+  </div>
+  <div class="journey-grid">
+    <div class="journey-step">
+      <div class="step-num">01</div>
+      <div class="step-icon">💬</div>
+      <div class="step-title">Free Online Inquiry</div>
+      <div class="step-desc">Fill in a 2-minute form or call us. Share photos, X-rays, and treatment needs. No commitment required.</div>
+      <div class="step-connector"></div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">02</div>
+      <div class="step-icon">🩺</div>
+      <div class="step-title">Remote Dental Assessment</div>
+      <div class="step-desc">Our partner dentist reviews your case within 24 hours and provides a personalised treatment plan and quote.</div>
+      <div class="step-connector"></div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">03</div>
+      <div class="step-icon">✈️</div>
+      <div class="step-title">Travel Coordination</div>
+      <div class="step-desc">We arrange flight guidance, hotel accommodation near the clinic, and VIP airport transfers.</div>
+      <div class="step-connector"></div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">04</div>
+      <div class="step-icon">🏥</div>
+      <div class="step-title">Treatment & Care</div>
+      <div class="step-desc">Your dedicated patient coordinator accompanies you to all appointments. All procedures performed by accredited specialists.</div>
+      <div class="step-connector"></div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">05</div>
+      <div class="step-icon">🌍</div>
+      <div class="step-title">Post-op & Aftercare</div>
+      <div class="step-desc">Follow-up consultations via video call. Full documentation for your local dentist. 12-month guarantee on procedures.</div>
+    </div>
+  </div>
+</section>
+
+<!-- COST CALCULATOR -->
+<section id="calculator">
+  <div class="section-header">
+    <span class="section-tag">Cost Comparison Tool</span>
+    <h2 class="section-title">How Much Could You <em>Save?</em></h2>
+    <p class="section-sub">Compare costs across countries and discover real savings available through EAmedical.</p>
+  </div>
+  <div class="calc-wrapper">
+    <div class="calc-form">
+      <label class="calc-label">Select Treatment</label>
+      <select class="calc-select" id="calc-treatment" onchange="updateCalc()">
+        <option value="implant">Single Dental Implant</option>
+        <option value="veneer">Porcelain Veneer (per tooth)</option>
+        <option value="allon4">All-on-4 Implants (full arch)</option>
+        <option value="crown">Zirconia Crown</option>
+        <option value="whitening">Teeth Whitening</option>
+        <option value="fullmouth">Full-Mouth Rehabilitation</option>
+      </select>
+
+      <label class="calc-label">Your Country of Residence</label>
+      <select class="calc-select" id="calc-country" onchange="updateCalc()">
+        <option value="uk">United Kingdom 🇬🇧</option>
+        <option value="us">United States 🇺🇸</option>
+        <option value="germany">Germany 🇩🇪</option>
+        <option value="france">France 🇫🇷</option>
+        <option value="australia">Australia 🇦🇺</option>
+        <option value="netherlands">Netherlands 🇳🇱</option>
+      </select>
+
+      <label class="calc-label">Number of Teeth / Units</label>
+      <input type="number" class="calc-input" id="calc-units" value="1" min="1" max="28" onchange="updateCalc()" oninput="updateCalc()">
+
+      <div style="background:var(--gold-pale);border:1px solid rgba(160,120,48,0.2);border-radius:var(--radius);padding:1.25rem;margin-top:0.5rem;">
+        <p style="font-size:0.82rem;color:var(--gold-deep);font-weight:500;margin-bottom:0.4rem;">✓ Prices include all-inclusive packages</p>
+        <p style="font-size:0.78rem;color:var(--text-muted);font-weight:300;">Our Turkey prices include clinic fee, consultation, materials, anaesthesia, and aftercare. Travel & accommodation not included.</p>
+      </div>
+    </div>
+    <div class="calc-results">
+      <div class="calc-results-title">Estimated Cost Comparison</div>
+      <div id="calc-output">
+        <div class="savings-bar">
+          <div class="savings-bar-label"><span class="country">🇬🇧 United Kingdom</span><span class="price" id="price-home">£2,200</span></div>
+          <div class="bar-track"><div class="bar-fill home" id="bar-home" style="width:100%"></div></div>
+        </div>
+        <div class="savings-bar">
+          <div class="savings-bar-label"><span class="country">🇹🇷 Turkey (via EAmedical)</span><span class="price" id="price-turkey">£450</span></div>
+          <div class="bar-track"><div class="bar-fill turkey" id="bar-turkey" style="width:20%"></div></div>
+        </div>
+      </div>
+      <div class="savings-total">
+        <div>
+          <div class="savings-amount" id="savings-amount">£1,750</div>
+          <div class="savings-label">Total estimated savings</div>
+        </div>
+        <div class="savings-pct" id="savings-pct">80%</div>
+      </div>
+      <a href="#consultation" style="display:block;text-align:center;margin-top:1.5rem;background:var(--gold);color:white;padding:0.875rem;border-radius:50px;font-weight:600;text-decoration:none;font-size:0.9rem;transition:background 0.2s;" onmouseover="this.style.background='#a07830'" onmouseout="this.style.background='#c9a84c'">
+        Get My Personalised Quote →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOSPITALS -->
+<section id="hospitals">
+  <div class="section-header">
+    <span class="section-tag">Partner Facilities</span>
+    <h2 class="section-title">JCI-Accredited <em>Hospital Partners</em></h2>
+    <p class="section-sub">Every facility in our network is independently audited for clinical excellence, safety standards, and patient satisfaction.</p>
+  </div>
+  <div class="hospitals-grid">
+    <div class="hospital-card">
+      <div class="hospital-header">
+        <div class="hospital-icon">🏥</div>
+        <span class="jci-badge">JCI Accredited</span>
+      </div>
+      <div class="hospital-name">Istanbul Dental Excellence Centre</div>
+      <div class="hospital-location">📍 Şişli, Istanbul, Turkey</div>
+      <div class="hospital-tags">
+        <span class="hosp-tag">Implantology</span>
+        <span class="hosp-tag">Oral Surgery</span>
+        <span class="hosp-tag">Orthodontics</span>
+        <span class="hosp-tag">Cosmetic Dentistry</span>
+      </div>
+      <div class="hospital-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span><span class="rating-count">(841 reviews)</span></div>
+    </div>
+    <div class="hospital-card">
+      <div class="hospital-header">
+        <div class="hospital-icon">🦷</div>
+        <span class="jci-badge">JCI Accredited</span>
+      </div>
+      <div class="hospital-name">Antalya Smile Medical Centre</div>
+      <div class="hospital-location">📍 Konyaaltı, Antalya, Turkey</div>
+      <div class="hospital-tags">
+        <span class="hosp-tag">Veneers</span>
+        <span class="hosp-tag">All-on-4</span>
+        <span class="hosp-tag">Crowns & Bridges</span>
+      </div>
+      <div class="hospital-rating"><span class="stars">★★★★★</span><span class="rating-num">4.8</span><span class="rating-count">(612 reviews)</span></div>
+    </div>
+    <div class="hospital-card">
+      <div class="hospital-header">
+        <div class="hospital-icon">🏨</div>
+        <span class="jci-badge">ISO 9001</span>
+      </div>
+      <div class="hospital-name">Marmaris Dental & Health Resort</div>
+      <div class="hospital-location">📍 Marmaris, Muğla, Turkey</div>
+      <div class="hospital-tags">
+        <span class="hosp-tag">Whitening</span>
+        <span class="hosp-tag">Implants</span>
+        <span class="hosp-tag">Gum Treatment</span>
+      </div>
+      <div class="hospital-rating"><span class="stars">★★★★★</span><span class="rating-num">4.7</span><span class="rating-count">(389 reviews)</span></div>
+    </div>
+    <div class="hospital-card">
+      <div class="hospital-header">
+        <div class="hospital-icon">⚕️</div>
+        <span class="jci-badge">JCI Accredited</span>
+      </div>
+      <div class="hospital-name">CliniCare Prague Dental Institute</div>
+      <div class="hospital-location">📍 Vinohrady, Prague, Czechia</div>
+      <div class="hospital-tags">
+        <span class="hosp-tag">Cosmetic</span>
+        <span class="hosp-tag">Implants</span>
+        <span class="hosp-tag">Sedation Dentistry</span>
+      </div>
+      <div class="hospital-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span><span class="rating-count">(528 reviews)</span></div>
+    </div>
+    <div class="hospital-card">
+      <div class="hospital-header">
+        <div class="hospital-icon">🌿</div>
+        <span class="jci-badge">ADA Partner</span>
+      </div>
+      <div class="hospital-name">Budapest Dental Wellness Clinic</div>
+      <div class="hospital-location">📍 Buda Castle District, Hungary</div>
+      <div class="hospital-tags">
+        <span class="hosp-tag">Full Mouth Rehab</span>
+        <span class="hosp-tag">Veneers</span>
+        <span class="hosp-tag">Periodontics</span>
+      </div>
+      <div class="hospital-rating"><span class="stars">★★★★★</span><span class="rating-num">4.8</span><span class="rating-count">(716 reviews)</span></div>
+    </div>
+    <div class="hospital-card">
+      <div class="hospital-header">
+        <div class="hospital-icon">🔬</div>
+        <span class="jci-badge">ISO 9001</span>
+      </div>
+      <div class="hospital-name">Izmir Advanced Stomatology</div>
+      <div class="hospital-location">📍 Konak, Izmir, Turkey</div>
+      <div class="hospital-tags">
+        <span class="hosp-tag">Digital Dentistry</span>
+        <span class="hosp-tag">3D Imaging</span>
+        <span class="hosp-tag">Implants</span>
+      </div>
+      <div class="hospital-rating"><span class="stars">★★★★½</span><span class="rating-num">4.7</span><span class="rating-count">(293 reviews)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header centered">
+    <span class="section-tag">Patient Stories</span>
+    <h2 class="section-title">Verified <em>Patient Testimonials</em></h2>
+    <p class="section-sub">Every review is authenticated and linked to a real treatment record. No anonymous or unverified entries.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <span class="treatment-tag">Veneers</span>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">I'd been quoted £14,000 in London. EAmedical connected me to an incredible clinic in Istanbul — I paid £3,200 all-in including flights and hotel, and the result is genuinely life-changing. My coordinator was available every step of the way.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">SH</div>
+        <div>
+          <div class="author-name">Sarah H.</div>
+          <div class="author-detail">Manchester, UK · 16 Veneers</div>
+          <div class="verified-badge">✓ Verified Treatment</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <span class="treatment-tag">All-on-4</span>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">After years of avoiding the dentist, I finally took the plunge. The All-on-4 procedure in Antalya was seamless. The clinic was spotless, the surgeon spoke perfect English, and I genuinely feel 20 years younger. Worth every penny — and I saved over £12,000.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">TM</div>
+        <div>
+          <div class="author-name">Thomas M.</div>
+          <div class="author-detail">Berlin, Germany · All-on-4 (both arches)</div>
+          <div class="verified-badge">✓ Verified Treatment</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <span class="treatment-tag">Implants</span>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">I was nervous about travelling abroad for dental work. EAmedical's team addressed every concern before I booked. The whole trip — implants, hotel, transfers — cost less than just the implants would have at home in Dublin. Exceptional care throughout.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">ÁO</div>
+        <div>
+          <div class="author-name">Áine O'Brien</div>
+          <div class="author-detail">Dublin, Ireland · 3 Implants</div>
+          <div class="verified-badge">✓ Verified Treatment</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <span class="treatment-tag">Full Rehab</span>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Full-mouth rehabilitation across 6 days in Istanbul. Sounds daunting, but our coordinator was with me at every appointment, translating and advocating. The before-and-after is truly dramatic. I can't stop smiling — literally.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">LC</div>
+        <div>
+          <div class="author-name">Lynda C.</div>
+          <div class="author-detail">Lyon, France · Full Mouth Rehab</div>
+          <div class="verified-badge">✓ Verified Treatment</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <span class="treatment-tag">Crowns</span>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Eight zirconia crowns at the Budapest clinic. The quality of work is absolutely on par — or better — than anything I've experienced in the Netherlands. EAmedical's pre-trip online consultation was thorough and gave me complete confidence.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JV</div>
+        <div>
+          <div class="author-name">Jan V.</div>
+          <div class="author-detail">Amsterdam, Netherlands · 8 Crowns</div>
+          <div class="verified-badge">✓ Verified Treatment</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <span class="treatment-tag">Implant + Crown</span>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Flew from Sydney — yes, from Australia. Even with flights factored in, I saved over AUD $7,000. The Prague clinic felt like a private hospital. Follow-up video calls were included and my local dentist was impressed with the documentation provided.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">RK</div>
+        <div>
+          <div class="author-name">Rachel K.</div>
+          <div class="author-detail">Sydney, Australia · 2 Implants + Crowns</div>
+          <div class="verified-badge">✓ Verified Treatment</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors">
+  <div class="section-header centered">
+    <span class="section-tag">Our Specialists</span>
+    <h2 class="section-title">Meet Our <em>Medical Team</em></h2>
+    <p class="section-sub">All partner clinicians hold international qualifications and undergo ongoing performance review by our medical advisory board.</p>
+  </div>
+  <div class="doctors-grid">
+    <div class="doctor-card">
+      <div class="doctor-avatar-wrap d1">👨‍⚕️</div>
+      <div class="doctor-body">
+        <div class="doctor-name">Dr. Emre Yıldız</div>
+        <div class="doctor-specialty">Implantology & Oral Surgery</div>
+        <div class="doctor-creds">DDS, Istanbul University · EAO Member · ICOI Fellow</div>
+        <div class="doctor-exp">18 years experience · 4,200+ implants placed</div>
+      </div>
+    </div>
+    <div class="doctor-card">
+      <div class="doctor-avatar-wrap d2">👩‍⚕️</div>
+      <div class="doctor-body">
+        <div class="doctor-name">Dr. Petra Novák</div>
+        <div class="doctor-specialty">Cosmetic Dentistry & Veneers</div>
+        <div class="doctor-creds">DMD, Charles University Prague · AACD Member</div>
+        <div class="doctor-exp">14 years experience · Lumineers-certified</div>
+      </div>
+    </div>
+    <div class="doctor-card">
+      <div class="doctor-avatar-wrap d3">👨‍⚕️</div>
+      <div class="doctor-body">
+        <div class="doctor-name">Dr. Mehmet Çelik</div>
+        <div class="doctor-specialty">Prosthodontics & Full Arch</div>
+        <div class="doctor-creds">PhD in Prosthodontics, Hacettepe Univ. · 22 publications</div>
+        <div class="doctor-exp">21 years experience · All-on-X specialist</div>
+      </div>
+    </div>
+    <div class="doctor-card">
+      <div class="doctor-avatar-wrap d4">👩‍⚕️</div>
+      <div class="doctor-body">
+        <div class="doctor-name">Dr. Anna Horváth</div>
+        <div class="doctor-specialty">Orthodontics & Invisalign</div>
+        <div class="doctor-creds">MSc Orthodontics, Semmelweis Univ. · Platinum Invisalign Provider</div>
+        <div class="doctor-exp">11 years experience · 1,800+ cases</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 24/7 SUPPORT STRIP -->
+<div id="support">
+  <div class="support-grid">
+    <div class="support-item">
+      <div class="support-icon">📞</div>
+      <div>
+        <div class="support-title">24/7 Patient Helpline</div>
+        <div class="support-desc">Reach a real human coordinator any time — before, during, or after your treatment. WhatsApp, phone, and email.</div>
+      </div>
+    </div>
+    <div class="support-item">
+      <div class="support-icon">🌐</div>
+      <div>
+        <div class="support-title">Multilingual Support</div>
+        <div class="support-desc">Our team speaks English, German, French, Arabic, Dutch, and more. No language barrier, ever.</div>
+      </div>
+    </div>
+    <div class="support-item">
+      <div class="support-icon">🛡️</div>
+      <div>
+        <div class="support-title">Treatment Guarantee</div>
+        <div class="support-desc">All procedures come with a 12-month guarantee. If anything requires revision, we coordinate and cover it.</div>
+      </div>
+    </div>
+    <div class="support-item">
+      <div class="support-icon">📋</div>
+      <div>
+        <div class="support-title">Full Medical Documentation</div>
+        <div class="support-desc">Complete treatment records, X-rays, and reports are shared with you and your local dentist after every procedure.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONSULTATION FORM -->
+<section id="consultation">
+  <div class="consult-pattern"></div>
+  <div class="consult-grid">
+    <div>
+      <span class="section-tag">Free Consultation</span>
+      <h2 class="section-title">Start Your Journey<br><em>Today — It's Free</em></h2>
+      <p class="section-sub">No obligation, no pressure. Share your details and receive a personalised treatment plan with transparent pricing within 24 hours.</p>
+      <div class="consult-features">
+        <div class="consult-feature">
+          <div class="feature-icon">⚡</div>
+          <div>
+            <div class="feature-title">Response within 24 hours</div>
+            <div class="feature-desc">Our patient consultants review every inquiry personally and respond with a detailed plan.</div>
+          </div>
+        </div>
+        <div class="consult-feature">
+          <div class="feature-icon">🔒</div>
+          <div>
+            <div class="feature-title">100% confidential & GDPR compliant</div>
+            <div class="feature-desc">Your data is never shared with third parties. Secure encrypted submission.</div>
+          </div>
+        </div>
+        <div class="consult-feature">
+          <div class="feature-icon">💰</div>
+          <div>
+            <div class="feature-title">Zero upfront commitment</div>
+            <div class="feature-desc">The consultation, quote, and treatment plan are completely free with no obligation to book.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card">
+      <div class="form-title">Request a Free Consultation</div>
+      <div class="form-subtitle">Fill in your details below and we'll be in touch within 24 hours.</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First Name *</label>
+          <input type="text" class="form-input" placeholder="Jane">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name *</label>
+          <input type="text" class="form-input" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address *</label>
+        <input type="email" class="form-input" placeholder="jane@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone / WhatsApp</label>
+        <input type="tel" class="form-input" placeholder="+44 7700 900000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Country of Residence *</label>
+        <select class="form-select">
+          <option value="">Select your country</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+          <option>Germany</option>
+          <option>France</option>
+          <option>Australia</option>
+          <option>Ireland</option>
+          <option>Netherlands</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Treatment Interested In *</label>
+        <select class="form-select">
+          <option value="">Select treatment</option>
+          <option>Dental Implants</option>
+          <option>Porcelain Veneers</option>
+          <option>All-on-4 / All-on-6</option>
+          <option>Dental Crowns</option>
+          <option>Full Mouth Rehabilitation</option>
+          <option>Teeth Whitening</option>
+          <option>Not sure — need advice</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Preferred Destination</label>
+        <select class="form-select">
+          <option value="">No preference</option>
+          <option>Istanbul, Turkey</option>
+          <option>Antalya, Turkey</option>
+          <option>Izmir, Turkey</option>
+          <option>Prague, Czech Republic</option>
+          <option>Budapest, Hungary</option>
+        </select>
+      </div>
+      <button class="form-submit" onclick="handleSubmit(this)">Book My Free Consultation →</button>
+      <p class="form-privacy">🔒 Your information is encrypted and never shared. By submitting you agree to our Privacy Policy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <svg viewBox="0 0 190 42" xmlns="http://www.w3.org/2000/svg" style="height:38px;width:auto;display:block;margin-bottom:1rem;" aria-label="EAmedical">
+          <rect x="2" y="13" width="7" height="14" rx="2.5" fill="#c9a84c"/>
+          <rect x="0" y="18" width="11" height="4" rx="2" fill="#c9a84c"/>
+          <text x="18" y="30" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" fill="#ffffff" letter-spacing="0.5">EA</text>
+          <text x="52" y="30" font-family="'DM Sans', Arial, sans-serif" font-size="16" font-weight="300" fill="#c9a84c" letter-spacing="2">medical</text>
+          <line x1="18" y1="34" x2="172" y2="34" stroke="#c9a84c" stroke-width="0.75" opacity="0.4"/>
+        </svg>
+      </span>
+      <p class="footer-desc">Europe's most trusted medical tourism facilitator for dental treatments. Connecting patients with JCI-accredited clinics in Turkey, Czech Republic, Hungary, and beyond since 2012.</p>
+      <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <div class="cert-pill">JCI Partner</div>
+        <div class="cert-pill">TURSAB Licensed</div>
+        <div class="cert-pill">ISO 9001:2015</div>
+        <div class="cert-pill">GDPR Compliant</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Treatments</div>
+      <ul class="footer-links">
+        <li><a href="#treatments">Dental Implants</a></li>
+        <li><a href="#treatments">Porcelain Veneers</a></li>
+        <li><a href="#treatments">All-on-4 / All-on-6</a></li>
+        <li><a href="#treatments">Dental Crowns</a></li>
+        <li><a href="#treatments">Teeth Whitening</a></li>
+        <li><a href="#treatments">Full Mouth Rehab</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#">About EAmedical</a></li>
+        <li><a href="#">Our Hospitals</a></li>
+        <li><a href="#">Meet the Team</a></li>
+        <li><a href="#">Patient Stories</a></li>
+        <li><a href="#">Blog & Guides</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Travel Guide</a></li>
+        <li><a href="#">Finance Options</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#consultation">Contact Us</a></li>
+      </ul>
+      <div style="margin-top:1.5rem;">
+        <div class="footer-col-title">24/7 Support</div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);">📞 +44 20 7946 0000</p>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin-top:4px;">💬 WhatsApp Available</p>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin-top:4px;">✉️ hello@eamedical.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 EAmedical Ltd. All rights reserved. Registered in England & Wales. Company No. 08761234</p>
+    <p style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-top:0.5rem;">Medical disclaimer: EAmedical is a facilitation agency and does not provide medical advice. Treatment outcomes may vary.</p>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="#consultation" class="float-cta">
+  <div class="pulse"></div>
+  Free Consultation
+</a>
+
+<script>
+const prices = {
+  implant:    { uk: 2200, us: 3200, germany: 1800, france: 1600, australia: 2800, netherlands: 1900, turkey: 450 },
+  veneer:     { uk: 750,  us: 1100, germany: 650,  france: 600,  australia: 950,  netherlands: 700,  turkey: 185 },
+  allon4:     { uk: 14000,us: 24000,germany:11000, france: 10000,australia: 19000,netherlands:12000, turkey: 3800 },
+  crown:      { uk: 700,  us: 1100, germany: 550,  france: 500,  australia: 900,  netherlands: 650,  turkey: 130 },
+  whitening:  { uk: 400,  us: 600,  germany: 350,  france: 300,  australia: 500,  netherlands: 380,  turkey: 95 },
+  fullmouth:  { uk: 22000,us: 35000,germany:18000, france: 16000,australia: 28000,netherlands:20000, turkey: 6500 }
+};
+const currencies = { uk: '£', us: '$', germany: '€', france: '€', australia: 'A$', netherlands: '€' };
+const countryNames = { uk: '🇬🇧 United Kingdom', us: '🇺🇸 United States', germany: '🇩🇪 Germany', france: '🇫🇷 France', australia: '🇦🇺 Australia', netherlands: '🇳🇱 Netherlands' };
+
+function updateCalc() {
+  const treatment = document.getElementById('calc-treatment').value;
+  const country = document.getElementById('calc-country').value;
+  const units = Math.max(1, parseInt(document.getElementById('calc-units').value) || 1);
+  const sym = currencies[country];
+  const homePrice = prices[treatment][country] * units;
+  const turkeyPrice = prices[treatment].turkey * units;
+  const saving = homePrice - turkeyPrice;
+  const pct = Math.round((saving / homePrice) * 100);
+  const turkeyPct = Math.round((turkeyPrice / homePrice) * 100);
+
+  document.getElementById('price-home').textContent = sym + homePrice.toLocaleString();
+  document.getElementById('price-turkey').textContent = '£' + turkeyPrice.toLocaleString();
+  document.getElementById('bar-home').style.width = '100%';
+  document.getElementById('bar-turkey').style.width = turkeyPct + '%';
+  document.getElementById('savings-amount').textContent = sym + saving.toLocaleString();
+  document.getElementById('savings-pct').textContent = pct + '%';
+  document.querySelector('.savings-bar-label .country').textContent = countryNames[country];
+}
+
+function handleSubmit(btn) {
+  btn.textContent = '✓ Submitted! We\'ll be in touch within 24 hours.';
+  btn.style.background = '#a07830';
+  btn.disabled = true;
+}
+
+// Intersection observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.treatment-card, .hospital-card, .testimonial-card, .doctor-card, .journey-step').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s, border-color 0.3s';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
